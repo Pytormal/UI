@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- link tags -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+    <link rel="icon" href="Pictures/Portfolio Logo.png" />
+    <!-- icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Carousel Reference -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--scripts  -->
+    <script src="main.js"></script>
+
+    <!-- title -->
+    <title>Welcome Home</title>
+</head>
+
+<!-- navigation -->
+<nav>
+    <ul class="top-nav">
+        <h1>Alex Andrew's Portfolio</h1>
+
+        <a href="home.html" class="home-button"><img src="Pictures/Portfolio Logo.png" /></a>
+
+        <!-- search bar -->
+        <form id="sarchform" class="search2" method="get" action="source.html">
+
+            <input class="search2" id="test" type="text" name="search" placeholder="Search the site" size="10"
+                maxlength="255" />
+    </ul>
+
+    <!-- Navigation links (hidden by default) -->
+    <ul class="menu-button">
+        <div id="myLinks">
+            <a href="Projects.html">Projects</a>
+            <a href="Contact.html">Contact</a>
+            <a href="About.html">About</a>
+        </div>
+
+        <!--"Hamburger menu" / "Bar icon" to toggle the navigation links-->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+    </ul>
+</nav>
+
+<header class="header">
+    <div class="project-bio">
+        <h2 class="project-bio-header">My Projects</h2>
+        <p>
+            This page will show off some of the school projects I have worked on during my time at Lambda School. If you
+            wish to see personal projects as well as more school projects, hit the "My Projects" button at the bottom,
+            or find it in the menu.
+        </p>
+    </div>
+
+    <div class="about-me-bio">
+        <h2 class="about-me-header">About Me</h2>
+        <p>
+            A little about me. I have recently decided to be a Software Engineer in the field of Web Development. I
+            enjoy my quite space and love to be with friends. I am a person who doesn't give up easy. get to know me
+            more from the "About Me".
+        </p>
+    </div>
+</header>
+
+<body>
+    <main>
+        <div class="container">
+            <h2>My Projects</h2>
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                    <li data-target="#myCarousel" data-slide-to="6"></li>
+                    <li data-target="#myCarousel" data-slide-to="7"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <a href="other pages/Project 1/Build Week Unit1/marketing_page/Index.html"><img
+                                src="https://picsum.photos/id/103/367/267" alt="1" />
+                        </a>
+                    </div>
+
+                    <div class="item">
+                        <a href=""><img src="https://picsum.photos/id/104/367/267" alt="2" /></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="">
+                            <img src="https://picsum.photos/id/1079/367/267" alt="3" /></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="">
+                            <img src="https://picsum.photos/id/129/367/267" alt="4" /></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="">
+                            <img src="https://picsum.photos/id/177/367/267" alt="5" /></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="">
+                            <img src="https://picsum.photos/id/270/367/267" alt="6" /></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="">
+                            <img src="https://picsum.photos/id/326/367/267" alt="7" /></a>
+                    </div>
+
+                    <div class="item">
+                        <a href="">
+                            <img src="https://picsum.photos/id/390/367/267" alt="8" /></a>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <section class="horizontal-scroll">
+            <section class="top-row">
+                <ul>
+                    <li><a href="other pages/Project 1/Build Week Unit1/marketing_page/Index.html">
+                            <img src="https://picsum.photos/id/103/367/267" alt="1"></a>
+                        <h3>
+                            <a href="other pages/Project 1/Build Week Unit1/marketing_page/Index.html">
+                                Project 1</a>
+                        </h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="">
+                            <img src="https://picsum.photos/id/104/367/267" alt="2" /></a>
+                        <h3>
+                            <a href="other pages/Project 2.html">Project 2</a>
+                        </h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="">
+                            <img src="https://picsum.photos/id/1079/367/267" alt="3" /></a>
+                        <h3>
+                            <a href="other pages/Project 3.html">Project 3</a>
+                        </h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="">
+                            <img src="https://picsum.photos/id/129/367/267" alt="4" /></a>
+                        <h3>
+                            <a href="other pages/Project 4.html">Project 4</a>
+                        </h3>
+                    </li>
+                </ul>
+            </section>
+            <section class="bottom-row">
+                <ul>
+                    <li><a href="">
+                            <img src="https://picsum.photos/id/177/367/267" alt="5" /></a>
+                        <h3>
+                            <a href="other pages/Project 5.html">Project 5</a>
+                        </h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="">
+                            <img src="https://picsum.photos/id/270/367/267" alt="6" /></a>
+                        <h3>
+                            <a href="other pages/Project 6.html">Project 6</a>
+                        </h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="">
+                            <img src="https://picsum.photos/id/326/367/267" alt="7" /></a>
+                        <h3>
+                            <a href="other pages/Project 7.html">Project 7</a>
+                        </h3>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="">
+                            <img src="https://picsum.photos/id/390/367/267" alt="8" /></a>
+                        <h3>
+                            <a href="other pages/Project 8.html">Project 8</a>
+                        </h3>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </main>
+</body>
+<footer>
+    <nav>
+        <ul class="bottom-nav">
+            <section>
+                <a href="Contact.html" class="button">Contact Me<br /></a>
+
+                <a href="Projects.html" class="button2">My Projects</a>
+            </section>
+
+            <section class="fa-do">
+                <a class="fa fa-linkedin" href="https://www.linkedin.com/in/mallory-alexandrew/" target="_blank"></a>
+
+                <a class="fa fa-facebook" href="https://www.facebook.com/pytormal" target="_blank"></a>
+
+                <a class="fa fa-twitter" href="https://www.twitter.com/pytormal" target="_blank"></a>
+
+                <a class="fa fa-instagram" href="https://www.instagram.com/alexandrewmallory/" target="_blank"></a>
+            </section>
+        </ul>
+    </nav>
+</footer>
+
+</html>

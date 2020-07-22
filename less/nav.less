@@ -1,0 +1,70 @@
+nav {
+     
+  // Navigation menu
+  h1{
+      font-size: 1.2rem;
+  }
+  .top-nav {
+    background-color: @web-color;
+    width: auto;
+    .flex-row;
+  }
+
+  // Style navigation Menu links
+  .menu-button {
+    .flex-evenly;
+
+    // (nested) Hide the links inside the navigation menu (except for logo/home)
+    #myLinks {
+      display: none;
+     
+    }
+
+    //Style the hamburger menu
+    .icon {
+      // background: blue;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: @web-color;
+    }
+    
+    a {
+      color: @a-text-color;
+      padding: 1rem 1.2rem;
+      text-decoration: none;
+      font-size: 1.6rem;
+      margin: 0 auto;
+      background-color: @backdrop-color;
+      height: auto;
+      border-radius: 2rem;
+      :hover {
+        // background-color: grey;
+        color: @menu-button;
+      }
+    }
+  }
+
+  // bottom navigation
+  .bottom-nav {
+    background-color: @web-color;
+    width: auto;
+    height: 200px;
+    .flex-column;
+
+    a{
+      display:inline-block;
+    }
+
+    .fa-do{
+       font-size:4rem;
+      // .flex-row;
+      width:80%;
+      padding:2rem;
+      .flex-evenly;
+     
+    }
+  }
+}
+

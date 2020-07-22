@@ -1,0 +1,320 @@
+nav {
+  //title
+  @media @Mmobile {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media @Lmobile {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  @media @desktop {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  // Navigation bar
+  .top-nav {
+    @media @Mmmobile {
+      .flex-column;
+
+      img {
+        height: 8rem;
+      }
+    }
+
+    @media @Lmobile {
+      .flex-evenly;
+    }
+
+    @media @Ttablet {
+      .search2 {
+        display: none;
+      }
+    }
+
+    @media @tablet {
+      .flex-evenly;
+    }
+  }
+
+  .menu-button {
+    //links
+    #myLinks {
+      @media @Smobile {
+        position: absolute;
+        // display: block;
+        font-size: 1.2rem;
+      }
+      // link Sizes
+      a {
+        @media @SSsmobile {
+          font-size: 1rem;
+          padding: 0.2rem;
+        }
+        @media @Mmobile {
+          font-size: 2rem;
+        }
+        @media @Lmobile {
+          font-size: 2.2rem;
+        }
+        @media @tablet {
+          font-size: 2.6rem;
+        }
+        @media @Ldesktop {
+          font-size: 2.8rem;
+        }
+        @media @4k {
+          font-size: 3.5rem;
+        }
+      }
+    }
+
+    // menu button size
+    a {
+      @media @Mmobile {
+        font-size: 2.2rem;
+      }
+      @media @Lmobile {
+        font-size: 2.6rem;
+      }
+      @media @tablet {
+        font-size: 2.8rem;
+      }
+      @media @Ldesktop {
+        font-size: 3rem;
+      }
+      @media @4k {
+        font-size: 3.8rem;
+      }
+    }
+  }
+}
+
+// (Bios)
+.header {
+  .flex-column;
+@media @Ttablet {
+    .flex-evenly;
+  }
+  @media @Mmobile {
+    div {
+      padding: 2rem 1rem;
+      h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        text-align: center;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  @media @Llmobile {
+    .flex-column;
+
+    div {
+      padding: 2rem 1rem;
+
+      h2 {
+        font-size: 2rem;
+        padding: 2rem 1rem;
+      }
+
+      p {
+        text-align: center;
+        font-size: 1.2rem;
+      }
+    }
+  }
+ 
+
+  @media @tablet {
+    .flex-evenly;
+    div {
+      padding: 2rem 1rem;
+
+      h2 {
+        font-size: 2.2rem;
+        padding: 2rem 1rem;
+      }
+
+      p {
+        text-align: center;
+        width: 35rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  @media @desktop {
+    div {
+      padding: 2rem 0.5rem;
+
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        text-align: center;
+        width: 35rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  @media @Ldesktop {
+    div {
+      padding: 2rem 1rem;
+
+      p {
+        text-align: center;
+        width: 45rem;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  @media @4k {
+    div {
+      padding: 2rem 1rem;
+
+      h2 {
+        font-size: 4rem;
+      }
+
+      p {
+        text-align: center;
+        width: 60rem;
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+// page2 Bio text / img in 'About'
+.page2 {
+  @media @tablet {
+    .flex-between;
+  }
+  .imgButton {
+    margin: 0 auto;
+    img {
+      @media @tablet {
+        margin: 0 auto;
+        width: 60%;
+        height: auto;
+      }
+
+      @media @desktop {
+        width: 50%;
+        height: auto;
+      }
+      @media @Ldesktop {
+        width: 40%;
+        height: auto;
+      }
+    }
+
+    p {
+      text-align: center;
+      width: 80%;
+      display: hidden;
+    }
+  }
+
+  .about-me-bio2 {
+    @media @tablet {
+      font-size: 2rem;
+      margin: 0 auto;
+      width: 90vw;
+
+      h2 {
+        font-size: 4rem;
+      }
+    }
+
+    @media @tablet {
+      width: 40vw;
+    }
+
+    @media @desktop {
+      font-size: 2.4rem;
+      margin: 0 auto;
+      width: 90vw;
+    }
+  }
+}
+
+// Project rows for tablet and desktop
+main {
+  @media @Ttablet {
+    height: auto;
+  }
+
+  .horizontal-scroll {
+    @media @tablet {
+      display: block;
+
+      img {
+        width: 12rem;
+      }
+    }
+
+    @media @desktop {
+      img {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+
+    @media @Ldesktop {
+      img {
+        width: 75%;
+        margin: auto;
+      }
+      p {
+        text-align: center;
+      }
+    }
+
+    @media @4k {
+      img {
+        width: 50rem;
+      }
+    }
+  }
+
+  //project columns for mobile Projects Page
+  .vertical-scroll {
+    @media @tablet {
+      display: unset;
+      .top-row,
+      .bottom-row {
+        .flex-row;
+      }
+    }
+
+    img {
+      @media @tablet {
+        display: block;
+
+        width: 12rem;
+      }
+      @media @desktop {
+        width: 15rem;
+      }
+      @media @Ldesktop {
+        width: 28rem;
+      }
+      @media @4k {
+        width: 50rem;
+      }
+    }
+  }
+}

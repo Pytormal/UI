@@ -126,37 +126,29 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-nav #myLinks:hover {
-  cursor: url(myBall.cur), auto;
+* {
+  font-family: "Raleway", sans-serif;
 }
 nav #myLinks:hover a:hover {
-  padding: 2rem;
+  position: sticky;
+  position: relative;
+  padding: 1rem;
   color: green;
-  font-size: 2em;
+  font-size: 2.6em;
   font-weight: bolder;
   cursor: none;
-  background: linear-gradient(to right, skyblue 10%, yellow 45%, crimson 70%);
+  background: linear-gradient(to right, black 20%, skyblue 55%, pink 75%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-size: 200% 100%;
-  background-position: 100%;
-  transition: background-position 1s;
+  background-size: 300% 60%;
+  background-position: 200%;
+  transition: background-position 2s;
 }
 nav img:hover {
   -webkit-filter: brightness(0.6) contrast(3.4) hue-rotate(217deg) saturate(9.9);
   filter: brightness(0.6) contrast(3.4) hue-rotate(217deg) saturate(9.9);
   cursor: none;
-}
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-items: flex-end;
-  padding: 2rem 1rem;
-  width: auto;
-  margin: 2px;
 }
 header div {
   padding: 2rem 0.2rem;
@@ -170,18 +162,6 @@ header div p {
   font-size: 1.2rem;
   text-align: center;
 }
-@media (min-width: 375px) {
-  header div {
-    padding: 2rem 1rem;
-  }
-  header div h2 {
-    font-size: 2.8rem;
-  }
-  header div p {
-    text-align: center;
-    font-size: 1.6rem;
-  }
-}
 body {
   height: 100vh;
 }
@@ -190,6 +170,37 @@ body img {
 }
 body .horizontal-scroll img:hover {
   transform: scale(1.45);
+}
+body .unique {
+  display: none;
+  align-items: flex-end;
+  padding: 2rem 1rem;
+  width: auto;
+  margin: 2px;
+}
+body .unique div {
+  padding: 2rem 0.2rem;
+}
+body .unique div h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  padding: 1rem;
+}
+body .unique div p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+@media (min-width: 375px) {
+  body .unique div {
+    padding: 2rem 1rem;
+  }
+  body .unique div h2 {
+    font-size: 2.8rem;
+  }
+  body .unique div p {
+    text-align: center;
+    font-size: 1.6rem;
+  }
 }
 .page2 {
   display: flex;
@@ -395,13 +406,14 @@ nav .menu-button .icon {
   position: absolute;
   right: 0;
   top: 0;
-  background-color: skyblue;
+  font-size: 2rem;
+  background: linear-gradient(to top, skyblue 55%, pink 75%);
 }
 nav .menu-button a {
   color: blue;
-  padding: 1rem 1.2rem;
+  padding: 1rem 1rem;
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   margin: 0 auto;
   background-color: lightgoldenrodyellow;
   height: auto;
@@ -473,7 +485,6 @@ nav .bottom-nav .fa-do {
   align-items: center;
 }
 main {
-  background-color: black;
   align-items: stretch;
   display: flex;
   flex-direction: column;
@@ -510,8 +521,17 @@ main .container {
   align-items: center;
 }
 main #myCarousel {
-  height: auto;
   margin: 2rem 0 4rem 0;
+  vertical-align: middle;
+  border: 1px solid #999;
+  background: #ffffff;
+  filter: alpha(opacity=100);
+  visibility: show;
+  height: auto;
+  width: 300px;
+  z-index: 50;
+  overflow: hidden;
+  text-align: center;
 }
 main #myCarousel .carousel-inner img {
   height: 80%;
@@ -526,10 +546,10 @@ main #myCarousel .carousel-inner img {
   vertical-align: middle;
   position: absolute;
   border: 1px solid #999;
-  background: #FFFFFF;
-  filter: alpha(opacity=100);
+  background: #ffffff;
+  filter: alpha(opacity=50);
   visibility: hidden;
-  height: 200px;
+  height: 600px;
   width: 200px;
   z-index: 50;
   overflow: hidden;
@@ -604,7 +624,6 @@ main #myCarousel .carousel-inner img {
 @media (max-width: 280px) {
   nav .menu-button #myLinks a {
     font-size: 1rem;
-    padding: 0.2rem;
   }
 }
 @media (min-width: 375px) {
@@ -657,203 +676,62 @@ main #myCarousel .carousel-inner img {
     font-size: 3.8rem;
   }
 }
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-@media (max-width: 768px) {
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-}
 @media (min-width: 375px) {
-  .header div {
+  header div {
     padding: 2rem 1rem;
   }
-  .header div h2 {
-    font-size: 1.5rem;
+  header div h2 {
+    font-size: 2.8rem;
   }
-  .header div p {
+  header div p {
     text-align: center;
-    font-size: 1.2rem;
-  }
-}
-@media (max-width: 426px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .header div {
-    padding: 2rem 1rem;
-  }
-  .header div h2 {
-    font-size: 2rem;
-    padding: 2rem 1rem;
-  }
-  .header div p {
-    text-align: center;
-    font-size: 1.2rem;
-  }
-}
-@media (min-width: 768px) {
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .header div {
-    padding: 2rem 1rem;
-  }
-  .header div h2 {
-    font-size: 2.2rem;
-    padding: 2rem 1rem;
-  }
-  .header div p {
-    text-align: center;
-    width: 35rem;
     font-size: 1.6rem;
   }
 }
 @media (min-width: 1024px) {
-  .header div {
-    padding: 2rem 0.5rem;
-  }
-  .header div h2 {
-    font-size: 2.5rem;
-  }
-  .header div p {
-    text-align: center;
-    width: 35rem;
-    font-size: 1.6rem;
-  }
-}
-@media (min-width: 1440px) {
-  .header div {
-    padding: 2rem 1rem;
-  }
-  .header div p {
-    text-align: center;
-    width: 45rem;
-    font-size: 2rem;
-  }
-}
-@media (min-width: 2560px) {
-  .header div {
-    padding: 2rem 1rem;
-  }
-  .header div h2 {
-    font-size: 4rem;
-  }
-  .header div p {
-    text-align: center;
-    width: 60rem;
-    font-size: 3rem;
-  }
-}
-@media (min-width: 768px) {
-  .page2 {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-  }
-}
-.page2 .imgButton {
-  margin: 0 auto;
-}
-@media (min-width: 768px) {
-  .page2 .imgButton img {
-    margin: 0 auto;
-    width: 60%;
-    height: auto;
-  }
-}
-@media (min-width: 1024px) {
-  .page2 .imgButton img {
-    width: 50%;
-    height: auto;
-  }
-}
-@media (min-width: 1440px) {
-  .page2 .imgButton img {
-    width: 40%;
-    height: auto;
-  }
-}
-.page2 .imgButton p {
-  text-align: center;
-  width: 80%;
-  display: hidden;
-}
-@media (min-width: 768px) {
-  .page2 .about-me-bio2 {
-    font-size: 2rem;
-    margin: 0 auto;
-    width: 90vw;
-  }
-  .page2 .about-me-bio2 h2 {
-    font-size: 4rem;
-  }
-}
-@media (min-width: 768px) {
-  .page2 .about-me-bio2 {
-    width: 40vw;
-  }
-}
-@media (min-width: 1024px) {
-  .page2 .about-me-bio2 {
-    font-size: 2.4rem;
-    margin: 0 auto;
-    width: 90vw;
+  header {
+    display: none;
   }
 }
 @media (max-width: 768px) {
-  main {
+  body main {
     height: auto;
   }
 }
 @media (min-width: 768px) {
-  main .horizontal-scroll {
+  body main .horizontal-scroll {
     display: block;
   }
-  main .horizontal-scroll img {
+  body main .horizontal-scroll img {
     width: 12rem;
   }
 }
 @media (min-width: 1024px) {
-  main .horizontal-scroll img {
+  body main .horizontal-scroll img {
     width: 90%;
     margin: 0 auto;
   }
 }
 @media (min-width: 1440px) {
-  main .horizontal-scroll img {
+  body main .horizontal-scroll img {
     width: 75%;
     margin: auto;
   }
-  main .horizontal-scroll p {
+  body main .horizontal-scroll p {
     text-align: center;
   }
 }
 @media (min-width: 2560px) {
-  main .horizontal-scroll img {
+  body main .horizontal-scroll img {
     width: 50rem;
   }
 }
 @media (min-width: 768px) {
-  main .vertical-scroll {
+  body main .vertical-scroll {
     display: unset;
   }
-  main .vertical-scroll .top-row,
-  main .vertical-scroll .bottom-row {
+  body main .vertical-scroll .top-row,
+  body main .vertical-scroll .bottom-row {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -861,23 +739,33 @@ main #myCarousel .carousel-inner img {
   }
 }
 @media (min-width: 768px) {
-  main .vertical-scroll img {
+  body main .vertical-scroll img {
     display: block;
     width: 12rem;
   }
 }
 @media (min-width: 1024px) {
-  main .vertical-scroll img {
+  body main .vertical-scroll img {
     width: 15rem;
   }
 }
 @media (min-width: 1440px) {
-  main .vertical-scroll img {
+  body main .vertical-scroll img {
     width: 28rem;
   }
 }
 @media (min-width: 2560px) {
-  main .vertical-scroll img {
+  body main .vertical-scroll img {
     width: 50rem;
+  }
+}
+@media (min-width: 768px) {
+  body main .unique {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
   }
 }

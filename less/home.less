@@ -1,7 +1,11 @@
 main {
-background-color: black;
-  body { margin: 0; }
-canvas { width: 100%; height: 100% }
+   body {
+    margin: 0;
+  }
+  canvas {
+    width: 100%;
+    height: 100%;
+  }
 
   // background-color:@web-color;
   .horizontal-scroll {
@@ -9,6 +13,7 @@ canvas { width: 100%; height: 100% }
   }
 
   //project grouped
+  
   .flex-centered;
   .flex-column;
 
@@ -17,6 +22,7 @@ canvas { width: 100%; height: 100% }
   .bottom-row {
     .flex-row;
     text-align: center;
+    
 
     ul {
       padding: 4rem;
@@ -30,32 +36,43 @@ canvas { width: 100%; height: 100% }
 
   #myCarousel {
     height: auto;
-    margin:2rem 0 4rem 0;
-    .carousel-inner {
+    margin: 2rem 0 4rem 0;
 
+    vertical-align: middle;
+    // position : absolute;
+    border: 1px solid #999;
+    background: #ffffff;
+    filter: Alpha(Opacity=100);
+    visibility: show;
+    height: auto;
+    width: 300px;
+    z-index: 50;
+    overflow: hidden;
+    text-align: center;
+
+    .carousel-inner {
       img {
         height: 80%;
         width: auto;
       }
     }
-    
+
     @media @tablet {
       display: none;
     }
   }
 }
 
-#imgbox 
-{
-    vertical-align : middle;
-    position : absolute;
-    border: 1px solid #999;
-    background : #FFFFFF; 
-    filter: Alpha(Opacity=100);
-    visibility : hidden;
-    height : 200px;
-    width : 200px;
-    z-index : 50;
-    overflow : hidden;
-    text-align : center;
+#imgbox {
+  vertical-align: middle;
+  position: absolute;
+  border: 1px solid #999;
+  background: #ffffff;
+  filter: Alpha(Opacity=50);
+  visibility: hidden;
+  height: 600px;
+  width: 200px;
+  z-index: 50;
+  overflow: hidden;
+  text-align: center;
 }

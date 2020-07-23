@@ -1,30 +1,32 @@
 // mobile design first (Small Mobile)
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
 nav {
   #myLinks:hover {
-    cursor: url(myBall.cur), auto;
     a:hover {
-      padding: 2rem;
+      position: sticky;
+      position: relative;
+      padding: 1rem;
       color: green;
-      font-size: 2em;
+      font-size: 2.6em;
       font-weight: bolder;
       cursor: none;
 
-      background: linear-gradient(
-        to right,
-        skyblue 10%,
-        yellow 45%,
-        crimson 70%
-      );
+      background: linear-gradient(to right, black 20%, skyblue 55%, pink 75%);
 
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      background-size: 200% 100%;
-      background-position: 100%;
+      background-size: 300% 60%;
+      background-position: 200%;
 
-      transition: background-position 1s;
+      transition: background-position 2s;
     }
   }
+
   // logo, Home button
   img:hover {
     -webkit-filter: brightness(0.6) contrast(3.4) hue-rotate(217deg)
@@ -34,39 +36,20 @@ nav {
   }
 }
 
-// bios block
+// Top Carousel
 header {
-  
-  .flex-column;
-  align-items: flex-end;
-  padding: 2rem 1rem;
-  width: auto;
-  margin: 2px;
-   
-
   div {
     padding: 2rem 0.2rem;
+
     h2 {
       text-align: center;
       font-size: 2.4rem;
       padding: 1rem;
     }
+
     p {
       font-size: 1.2rem;
       text-align: center;
-    }
-  }
-
-  @media @Mmobile {
-    div {
-      padding: 2rem 1rem;
-      h2 {
-        font-size: 2.8rem;
-      }
-      p {
-        text-align: center;
-        font-size: 1.6rem;
-      }
     }
   }
 }
@@ -81,12 +64,46 @@ body {
   .horizontal-scroll img:hover {
     transform: scale(1.45);
   }
+
+  // three titles
+  .unique {
+    display: none;
+    align-items: flex-end;
+    padding: 2rem 1rem;
+    width: auto;
+    margin: 2px;
+
+    div {
+      padding: 2rem 0.2rem;
+      h2 {
+        text-align: center;
+        font-size: 2.4rem;
+        padding: 1rem;
+      }
+      p {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+    }
+
+    @media @Mmobile {
+      div {
+        padding: 2rem 1rem;
+        h2 {
+          font-size: 2.8rem;
+        }
+        p {
+          text-align: center;
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
 }
 
 // page 2
 .page2 {
   .flex-column;
-
   .imgButton {
     .flex-column;
     width: 45%;

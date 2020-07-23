@@ -1,8 +1,7 @@
 nav {
-     
   // Navigation menu
-  h1{
-      font-size: 1.2rem;
+  h1 {
+    font-size: 1.2rem;
   }
   .top-nav {
     background-color: @web-color;
@@ -17,7 +16,6 @@ nav {
     // (nested) Hide the links inside the navigation menu (except for logo/home)
     #myLinks {
       display: none;
-     
     }
 
     //Style the hamburger menu
@@ -27,14 +25,15 @@ nav {
       position: absolute;
       right: 0;
       top: 0;
-      background-color: @web-color;
+      font-size: 2rem;
+      background: linear-gradient(to top, skyblue 55%, pink 75%);
     }
-    
+
     a {
       color: @a-text-color;
-      padding: 1rem 1.2rem;
+      padding: 1rem 1rem;
       text-decoration: none;
-      font-size: 1.6rem;
+      font-size: 1.2rem;
       margin: 0 auto;
       background-color: @backdrop-color;
       height: auto;
@@ -53,18 +52,16 @@ nav {
     height: 200px;
     .flex-column;
 
-    a{
-      display:inline-block;
+    a {
+      display: inline-block;
     }
 
-    .fa-do{
-       font-size:4rem;
+    .fa-do {
+      font-size: 4rem;
       // .flex-row;
-      width:80%;
-      padding:2rem;
+      width: 80%;
+      padding: 2rem;
       .flex-evenly;
-     
     }
   }
 }
-

@@ -1,0 +1,299 @@
+// mobile design first (Small Mobile)
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+nav {
+  #myLinks:hover {
+    a:hover {
+      position: sticky;
+      position: relative;
+      padding: 1rem;
+      color: green;
+      font-size: 2.6em;
+      font-weight: bolder;
+      cursor: none;
+
+      background: linear-gradient(to right, black 20%, skyblue 55%, pink 75%);
+
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 300% 60%;
+      background-position: 200%;
+
+      transition: background-position 2s;
+    }
+  }
+
+  // logo, Home button
+  img:hover {
+    -webkit-filter: brightness(0.6) contrast(3.4) hue-rotate(217deg)
+      saturate(9.9);
+    filter: brightness(0.6) contrast(3.4) hue-rotate(217deg) saturate(9.9);
+    cursor: none;
+  }
+}
+
+// Top Carousel
+header {
+  div {
+    padding: 2rem 0.2rem;
+
+    h2 {
+      text-align: center;
+      font-size: 2.4rem;
+      padding: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  }
+}
+
+// content
+body {
+  height: 100vh;
+  img {
+    display: block;
+  }
+
+  .horizontal-scroll img:hover {
+    transform: scale(1.45);
+  }
+
+  // three titles
+  .unique {
+    display: none;
+    align-items: flex-end;
+    padding: 2rem 1rem;
+    width: auto;
+    margin: 2px;
+
+    div {
+      padding: 2rem 0.2rem;
+      h2 {
+        text-align: center;
+        font-size: 2.4rem;
+        padding: 1rem;
+      }
+      p {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+    }
+
+    @media @Mmobile {
+      div {
+        padding: 2rem 1rem;
+        h2 {
+          font-size: 2.8rem;
+        }
+        p {
+          text-align: center;
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+
+// page 2
+.page2 {
+  .flex-column;
+  .imgButton {
+    .flex-column;
+    width: 45%;
+    img {
+      width: 90%;
+      height: auto;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+
+    p {
+      text-align: center;
+      width: 50%;
+      display: hidden;
+    }
+  }
+
+  // margin: auto;
+  .about-me-bio2 {
+    padding: 5rem 0;
+    margin: 0 auto;
+    width: 90vw;
+    h2 {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    @media @tablet {
+      width: 60vw;
+
+      // .bioRows{
+
+      // }
+    }
+  }
+}
+
+// button 1 "Contact Me"
+.button {
+  box-shadow: inset 0rem 0.1rem 0rem 0rem #572723b7;
+  background: linear-gradient(to bottom, #fc8d83 5%, violet 100%);
+  background-color: #fc8d83;
+  border-radius: 0.6rem;
+  border: 0.1rem solid #d83526;
+  display: inline-block;
+  cursor: pointer;
+  color: snow;
+  font-family: Arial;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.6rem 2.4rem;
+  text-decoration: none;
+  text-shadow: 0rem 0.1rem 0rem #b23e35;
+  transition: 0.5s;
+}
+.button:hover {
+  background: linear-gradient(to bottom, #70e70e 20%, #7418b104 100%);
+  background-color: #23cec060;
+  color: rgb(54, 16, 37);
+}
+.button:active {
+  position: relative;
+  top: 0.1rem;
+}
+// end of button 1
+
+// button 2 "My Projects"
+.button2 {
+  box-shadow: inset 0rem 0.1rem 0rem 0rem #572723b7;
+  background: linear-gradient(to bottom, #854a45 5%, violet 100%);
+  background-color: #a85f58;
+  border-radius: 0.6rem;
+  border: 0.1rem solid #d83526;
+  display: inline-block;
+  cursor: pointer;
+  color: snow;
+  font-family: Arial;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.6rem 2.4rem;
+  text-decoration: none;
+  text-shadow: 0rem 0.1rem 0rem #b23e35;
+  transition: 0.5s;
+}
+.button2:hover {
+  background: linear-gradient(to top, #820dd1cb 10%, #7418b104 100%);
+  background-color: #1e3f3c60;
+  color: #50df0e;
+}
+.button2:active {
+  position: relative;
+  top: 0.1rem;
+}
+
+// end of button 2
+
+// Start of Button 3
+.button3 {
+  box-shadow: unset black 2rem;
+  background: linear-gradient(to left, #0b62e454 5%, #f7084448 100%);
+  background-color: #fffcfb00;
+  border-radius: 0.6rem;
+  border: 0.1rem solid #0848be9f;
+  display: inline-block;
+  cursor: none;
+  color: black;
+  font-family: Arial;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.6rem 2.4rem;
+  text-decoration: none;
+  text-shadow: 0rem 0.1rem 0rem #063811;
+  transition: 0.8s;
+}
+.button3:hover {
+  background: linear-gradient(to right, #e2d4ebcb 10%, #9710f1fa 100%);
+  background-color: #16f3e160;
+  color: #c2eead;
+  transition: 0.6s;
+}
+.button3:active {
+  position: relative;
+  top: 0.1rem;
+}
+// end of Button 3
+
+// Social Media Links
+.fa-do a:hover {
+  background-color: #23cec000;
+  color: #f16392;
+  text-decoration: none;
+}
+
+// scroll bar
+
+/* width */
+::-webkit-scrollbar {
+  height: 12px;
+  overflow: auto;
+  direction: ltr;
+  display: block;
+  position: relative;
+  width: 12px;
+
+  @media @Ddesktop {
+    display: none;
+  }
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, #f10dd365 5%, violet 100%);
+  background-color: #a85f58;
+  border-radius: 0.6rem;
+  border: 0.1rem solid #26d8b4;
+  display: inline-block;
+  cursor: pointer;
+  color: snow;
+  font-family: Arial;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.6rem 2.4rem;
+  text-decoration: none;
+  text-shadow: 0rem 0.1rem 0rem #b23e35;
+  transition: 0.5s;
+}
+::-webkit-scrollbar-track:hover {
+  background: linear-gradient(to bottom, #2e0702 40%, #ac12e479 70%);
+  border-radius: 0.2rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #0dd8c0 5%, #e412e4 100%);
+  background-color: #fc8d83;
+  border-radius: 0.6rem;
+  border: 0.1rem solid #d83526;
+  display: inline-block;
+  cursor: pointer;
+  color: snow;
+  font-family: Arial;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.6rem 2.4rem;
+  text-decoration: none;
+  text-shadow: 0rem 0.1rem 0rem #b23e35;
+  transition: 0.5s;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #f32206 40%, #e4c412 70%);
+  border-radius: 0.2rem;
+}

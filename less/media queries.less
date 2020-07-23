@@ -1,0 +1,209 @@
+nav {
+  //title
+  @media @Mmobile {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media @Lmobile {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  @media @desktop {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  // Navigation bar
+  .top-nav {
+    @media @Mmmobile {
+      .flex-column;
+
+      img {
+        height: 8rem;
+      }
+    }
+
+    @media @Lmobile {
+      .flex-evenly;
+    }
+
+    @media @Ttablet {
+      .search2 {
+        display: none;
+      }
+    }
+
+    @media @tablet {
+      .flex-evenly;
+    }
+  }
+
+  .menu-button {
+    //links
+    #myLinks {
+      @media @Smobile {
+        position: absolute;
+        // display: hidden;
+        font-size: 1.2rem;
+      }
+      // link Sizes
+      a {
+        @media @SSsmobile {
+          font-size: 1rem;
+        }
+        @media @Mmobile {
+          font-size: 2rem;
+        }
+        @media @Lmobile {
+          font-size: 2.2rem;
+        }
+        @media @tablet {
+          font-size: 2.6rem;
+        }
+        @media @Ldesktop {
+          font-size: 2.8rem;
+        }
+        @media @4k {
+          font-size: 3.5rem;
+        }
+      }
+    }
+
+    // menu button size
+    a {
+      @media @Mmobile {
+        font-size: 2.2rem;
+      }
+      @media @Lmobile {
+        font-size: 2.6rem;
+      }
+      @media @tablet {
+        font-size: 2.8rem;
+      }
+      @media @Ldesktop {
+        font-size: 3rem;
+      }
+      @media @4k {
+        font-size: 3.8rem;
+      }
+    }
+  }
+}
+
+header {
+  @media @Mmobile {
+    div {
+      padding: 2rem 1rem;
+
+      h2 {
+        font-size: 2.8rem;
+      }
+
+      p {
+        text-align: center;
+        font-size: 1.6rem;
+      }
+    }
+  }
+  @media @desktop {
+      display: none;
+  }
+}
+
+body {
+  // 'Essential ideas' rows for tablet and desktop
+  main {
+    @media @Ttablet {
+      height: auto;
+    }
+
+    .horizontal-scroll {
+      @media @tablet {
+        display: block;
+
+        img {
+          width: 12rem;
+        }
+      }
+
+      @media @desktop {
+        img {
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+
+      @media @Ldesktop {
+        img {
+          width: 75%;
+          margin: auto;
+        }
+
+        p {
+          text-align: center;
+        }
+      }
+
+      @media @4k {
+        img {
+          width: 50rem;
+        }
+      }
+    }
+
+    //project columns for mobile Projects Page
+    .vertical-scroll {
+      @media @tablet {
+        display: unset;
+        .top-row,
+        .bottom-row {
+          .flex-row;
+        }
+      }
+
+      img {
+        @media @tablet {
+          display: block;
+          width: 12rem;
+        }
+
+        @media @desktop {
+          width: 15rem;
+        }
+
+        @media @Ldesktop {
+          width: 28rem;
+        }
+
+        @media @4k {
+          width: 50rem;
+        }
+      }
+    }
+    .unique {
+      @media @tablet {
+        .flex-evenly;
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      @media @desktop {
+        
+      }
+
+      @media @Ldesktop {
+       
+      }
+
+      @media @4k {
+       
+      }
+    }
+  }
+}
+

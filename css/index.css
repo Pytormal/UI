@@ -697,6 +697,9 @@ main #myCarousel .carousel-inner img {
     font-size: 1.6rem;
   }
 }
+body main {
+  height: 110vh;
+}
 @media (min-width: 375px) {
   body main .unique div {
     padding: 2rem 1rem;

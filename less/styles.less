@@ -52,51 +52,51 @@ header {
       text-align: center;
     }
   }
+  .carousel-inner {
+    display: block;
+    position: fixed;
+    position: relative;
+  }
 }
 
 // content
 body {
-  height: 100vh;
-  img {
-    display: block;
-  }
+  main {
+    height: 55vh;
 
-  .horizontal-scroll img:hover {
-    transform: scale(1.45);
-  }
+    // three titles
+    .unique {
+      display: none;
+      align-items: flex-end;
+      padding: 2rem 1rem;
+      width: auto;
+      margin: 2px;
 
-  // three titles
-  .unique {
-    display: none;
-    align-items: flex-end;
-    padding: 2rem 1rem;
-    width: auto;
-    margin: 2px;
-
-    div {
-      padding: 2rem 0.2rem;
-      h2 {
-        text-align: center;
-        font-size: 2.4rem;
-        padding: 1rem;
-      }
-      p {
-        font-size: 1.2rem;
-        text-align: center;
-      }
-    }
-
-    @media @Mmobile {
       div {
-        padding: 2rem 1rem;
+        padding: 2rem 0.2rem;
         h2 {
-          font-size: 2.8rem;
+          text-align: center;
+          font-size: 2.4rem;
+          padding: 1rem;
         }
         p {
+          font-size: 1.2rem;
           text-align: center;
-          font-size: 1.6rem;
         }
       }
+    }
+    
+//video player in mobile design
+    .video {
+      .flex-row;
+    }
+
+    // Essential Ideas row
+    .horizontal-scroll {
+      display: none;
+    }
+    .horizontal-scroll img:hover {
+      transform: scale(1.45);
     }
   }
 }

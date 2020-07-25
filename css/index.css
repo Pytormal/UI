@@ -126,6 +126,165 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.flex-between-row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.flex-between-reverse {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.flex-evenly {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  align-items: center;
+  text-align: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+html {
+  align-items: stretch;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html body {
+  margin: 0;
+}
+html body .welcome-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html canvas {
+  width: 100%;
+  height: 100%;
+}
+html .top-row,
+html .bottom-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+html .top-row ul,
+html .bottom-row ul {
+  padding: 4rem;
+  box-sizing: border-box;
+}
+html .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+nav h1 {
+  font-size: 1.2rem;
+}
+nav .top-nav {
+  background-color: #60afdd;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+nav .menu-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav .menu-button #myLinks {
+  display: none;
+}
+nav .menu-button .icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 2rem;
+  background-color: #60afdd;
+}
+nav .menu-button a {
+  color: #d6d8d3;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  background-color: #60afdd;
+  height: auto;
+  border-radius: 1rem;
+}
+nav .menu-button a :hover {
+  color: #d6d8d3;
+}
+nav .bottom-nav {
+  background-color: #14213d;
+  width: auto;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+nav .bottom-nav a {
+  display: inline-block;
+}
+nav .bottom-nav .fa-do {
+  font-size: 4rem;
+  width: 80%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.vertical-scroll {
+  display: none;
+}
+.vertical-scroll .top-row,
+.vertical-scroll .bottom-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.vertical-scroll ul img {
+  width: 24rem;
+}
 * {
   font-family: "Raleway", sans-serif;
 }
@@ -133,11 +292,10 @@ nav #myLinks:hover a:hover {
   position: sticky;
   position: relative;
   padding: 1rem;
-  color: green;
+  color: linear-gradient(to top, #14213d 20%, #60afdd 55%);
   font-size: 2.6em;
   font-weight: bolder;
-  cursor: none;
-  background: linear-gradient(to right, black 20%, skyblue 55%, pink 75%);
+  background: linear-gradient(to right, #14213D 20%, pink, #60AFDD 55%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -148,7 +306,6 @@ nav #myLinks:hover a:hover {
 nav img:hover {
   -webkit-filter: brightness(0.6) contrast(3.4) hue-rotate(217deg) saturate(9.9);
   filter: brightness(0.6) contrast(3.4) hue-rotate(217deg) saturate(9.9);
-  cursor: none;
 }
 header div {
   padding: 2rem 0.2rem;
@@ -168,7 +325,7 @@ header .carousel-inner {
   position: relative;
 }
 body main {
-  height: 55vh;
+  height: auto;
 }
 body main .unique {
   display: none;
@@ -191,7 +348,7 @@ body main .unique div p {
 }
 body main .video {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -200,6 +357,11 @@ body main .horizontal-scroll {
 }
 body main .horizontal-scroll img:hover {
   transform: scale(1.45);
+}
+@media (min-width: 768px) {
+  body main #myCarousel {
+    display: none;
+  }
 }
 .page2 {
   display: flex;
@@ -380,190 +542,6 @@ body main .horizontal-scroll img:hover {
   background: linear-gradient(to bottom, #f32206 40%, #e4c412 70%);
   border-radius: 0.2rem;
 }
-nav h1 {
-  font-size: 1.2rem;
-}
-nav .top-nav {
-  background-color: skyblue;
-  width: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-nav .menu-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-nav .menu-button #myLinks {
-  display: none;
-}
-nav .menu-button .icon {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  font-size: 2rem;
-  background: linear-gradient(to top, skyblue 55%, pink 75%);
-}
-nav .menu-button a {
-  color: blue;
-  padding: 1rem 1rem;
-  text-decoration: none;
-  font-size: 1.2rem;
-  margin: 0 auto;
-  background-color: lightgoldenrodyellow;
-  height: auto;
-  border-radius: 2rem;
-}
-nav .menu-button a :hover {
-  color: purple;
-}
-nav .bottom-nav {
-  background-color: skyblue;
-  width: auto;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-nav .bottom-nav a {
-  display: inline-block;
-}
-nav .bottom-nav .fa-do {
-  font-size: 4rem;
-  width: 80%;
-  padding: 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.flex-between-row {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-}
-.flex-between {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-}
-.flex-between-reverse {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-  align-items: center;
-}
-.flex-evenly {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.flex-centered {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-}
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-main {
-  align-items: stretch;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-main body {
-  margin: 0;
-}
-main canvas {
-  width: 100%;
-  height: 100%;
-}
-main .top-row,
-main .bottom-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-main .top-row ul,
-main .bottom-row ul {
-  padding: 4rem;
-  box-sizing: border-box;
-}
-main .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-main #myCarousel {
-  margin: 2rem 0 4rem 0;
-  vertical-align: middle;
-  border: 1px solid #999;
-  background: #ffffff;
-  filter: alpha(opacity=100);
-  visibility: show;
-  height: auto;
-  width: 300px;
-  z-index: 50;
-  overflow: hidden;
-  text-align: center;
-}
-main #myCarousel .carousel-inner img {
-  height: 80%;
-  width: auto;
-}
-@media (min-width: 768px) {
-  main #myCarousel {
-    display: none;
-  }
-}
-#imgbox {
-  vertical-align: middle;
-  position: absolute;
-  border: 1px solid #999;
-  background: #ffffff;
-  filter: alpha(opacity=50);
-  visibility: hidden;
-  height: 600px;
-  width: 200px;
-  z-index: 50;
-  overflow: hidden;
-  text-align: center;
-}
-.vertical-scroll {
-  display: none;
-}
-.vertical-scroll .top-row,
-.vertical-scroll .bottom-row {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.vertical-scroll ul img {
-  width: 24rem;
-}
 @media (min-width: 375px) {
   nav h1 {
     font-size: 1.5rem;
@@ -629,7 +607,7 @@ main #myCarousel .carousel-inner img {
 }
 @media (min-width: 425px) {
   nav .menu-button #myLinks a {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
   }
 }
 @media (min-width: 768px) {
@@ -697,8 +675,20 @@ main #myCarousel .carousel-inner img {
     font-size: 1.6rem;
   }
 }
-body main {
-  height: 110vh;
+@media (max-width: 768px) {
+  body main .welcome-header {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  body main .welcome-header {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    align-items: center;
+    text-align: center;
+  }
 }
 @media (min-width: 375px) {
   body main .unique div {
@@ -723,7 +713,11 @@ body main {
 }
 @media (min-width: 768px) {
   body main .video {
-    display: none;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }
 @media (max-width: 768px) {

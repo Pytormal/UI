@@ -1,6 +1,9 @@
-main {
-   body {
+html {
+  body {
     margin: 0;
+    .welcome-header {
+      .flex-column;
+    }
   }
   canvas {
     width: 100%;
@@ -8,7 +11,7 @@ main {
   }
 
   //project grouped
-  
+
   .flex-centered;
   .flex-column;
 
@@ -17,7 +20,6 @@ main {
   .bottom-row {
     .flex-row;
     text-align: center;
-    
 
     ul {
       padding: 4rem;
@@ -27,47 +29,6 @@ main {
 
   .container {
     .flex-column;
+    margin:2rem;
   }
-
-  #myCarousel {
-    height: auto;
-    margin: 2rem 0 4rem 0;
-
-    vertical-align: middle;
-    // position : absolute;
-    border: 1px solid #999;
-    background: #ffffff;
-    filter: Alpha(Opacity=100);
-    visibility: show;
-    height: auto;
-    width: 300px;
-    z-index: 50;
-    overflow: hidden;
-    text-align: center;
-
-    .carousel-inner {
-      img {
-        height: 80%;
-        width: auto;
-      }
-    }
-
-    @media @tablet {
-      display: none;
-    }
-  }
-}
-
-#imgbox {
-  vertical-align: middle;
-  position: absolute;
-  border: 1px solid #999;
-  background: #ffffff;
-  filter: Alpha(Opacity=50);
-  visibility: hidden;
-  height: 600px;
-  width: 200px;
-  z-index: 50;
-  overflow: hidden;
-  text-align: center;
 }

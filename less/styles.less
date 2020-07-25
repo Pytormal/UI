@@ -10,19 +10,15 @@ nav {
       position: sticky;
       position: relative;
       padding: 1rem;
-      color: green;
+      color: @web-color;
       font-size: 2.6em;
       font-weight: bolder;
-      cursor: none;
-
-      background: linear-gradient(to right, black 20%, skyblue 55%, pink 75%);
-
+      background: @a-font;
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-size: 300% 60%;
       background-position: 200%;
-
       transition: background-position 2s;
     }
   }
@@ -32,7 +28,6 @@ nav {
     -webkit-filter: brightness(0.6) contrast(3.4) hue-rotate(217deg)
       saturate(9.9);
     filter: brightness(0.6) contrast(3.4) hue-rotate(217deg) saturate(9.9);
-    cursor: none;
   }
 }
 
@@ -62,8 +57,7 @@ header {
 // content
 body {
   main {
-    height: 55vh;
-
+    height: auto;
     // three titles
     .unique {
       display: none;
@@ -86,9 +80,9 @@ body {
       }
     }
 
-//video player in mobile design
+    //video player in mobile design
     .video {
-      .flex-row;
+      .flex-column;
     }
 
     // Essential Ideas row
@@ -97,6 +91,11 @@ body {
     }
     .horizontal-scroll img:hover {
       transform: scale(1.45);
+    }
+    #myCarousel {
+      @media @tablet {
+        display: none;
+      }
     }
   }
 }
@@ -133,10 +132,6 @@ body {
 
     @media @tablet {
       width: 60vw;
-
-      // .bioRows{
-
-      // }
     }
   }
 }

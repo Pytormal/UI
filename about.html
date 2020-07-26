@@ -7,14 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- font resources -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
-    <!-- link tags -->
+    <!-- external link tags -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
     <link rel="icon" href="/Lambda School/Web Fundamentals/UI/Pictures/Essentialism logo.png" />
+
     <!-- icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <!-- Carousel Reference -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
@@ -23,6 +31,8 @@
 
     <!--scripts  -->
     <script src="main.js"></script>
+<script src="snake.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 
     <!-- title -->
     <title>Let's make life simple</title>
@@ -58,9 +68,11 @@
 </nav>
 
 <header class="header">
+
+    <!-- carousel -->
     <div class="Fun">
         <div id="myCarousel1" class="carousel slide" data-ride="carousel">
-<h2 class="welcome-header">The Team</h2>
+<h2 class="team-header">The Team</h2>
 <p>
     Our Team comprises of a UI developer, our front-end team of developers, and our back-end developer.
 </p>
@@ -71,7 +83,7 @@
                             <img src=""
                                 alt="" /></a>
                         <h2 class="profile-header">Megan Holt</h2>
-                        <p>UI Developer</p>
+                        <p>Team Lead</p>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna
@@ -144,37 +156,40 @@
 
 <body>
     <main>
-        <div class="welcome-header">
-            <h2 class="welcome-header">The Team</h2>
+        <!-- row -->
+        <section></section>
+        <div class="horizontal-team-header">
+            <h2 class="bottom-team-header">The Team</h2>
             <p>
                 Our Team comprises of a UI developer, our front-end team of developers, and our back-end developer.
             </p>
         </div>
-        <section class="unique2 horizontal-scroll">
-            <ul>
-                <li>
-                    <div class="profiles">
-                        <a href="">
-                                    <img src="" alt="1" /></a>
-                        <h2 class="profile-header">Megan Holt</h2>
-                        <p>Team Lead</p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna
-                            aliqua. Erat nam at lectus urna duis convallis convallis. Nullam ac tortor vitae purus faucibus
-                            ornare suspendisse
-                            sed.
-                        </p>
-                    </div>
-                </li>
-            </ul>
-            <div class="profiles">
+        <section class="about-container">
+           
+            <div class="profiles1">
                 <section class="horizontal-scroll">
-                    <section class="top-row">
-                        
+                    <ul>
+                        <li>
+                            <div class="lead-profile">
+                                <a href="">
+                                    <img src="" alt="1" /></a>
+                                <h2 class="profile-header">Megan Holt</h2>
+                                <p>Team Lead</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna
+                                    aliqua. Erat nam at lectus urna duis convallis convallis. Nullam ac tortor vitae purus faucibus
+                                    ornare suspendisse
+                                    sed.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <section class="main-content">
+                    <section class="top-row"> 
                         <ul>
                             <li><div class="profiles">
-                                <a href="https://github.com/valerievazq">
+                                <a href="https://github.com/pytormal">
                                     <img src="https://avatars2.githubusercontent.com/u/59344593?s=460&u=7ea2c6ac879e20c60b34a49caa2f356617f6b828&v=4"
                                         alt="4" /></a>
                                 <h2 class="profile-header">Alex Andrew</h2>
@@ -191,7 +206,7 @@
                         </ul>
                         <ul>
                             <li><div class="profiles">
-                                <a href="https://github.com/valerievazq">
+                                <a href="https://github.com/davisblakep">
                                     <img src="https://avatars0.githubusercontent.com/u/58578456?s=460&u=c8dc4ad782212c20e52dd285909d8233e4ff9a24&v=4"
                                         alt="4" /></a>
                                 <h2 class="profile-header">Blake Davis</h2>
@@ -206,6 +221,8 @@
                             </div>
                             </li>
                         </ul>
+                    </section>
+                        <section class="bottom-row">
                         <ul>
                             <li><div class="profiles">
                                 <a href="https://github.com/valerievazq">
@@ -226,7 +243,7 @@
                         <ul>
                             <li>
                                     <div class="profiles">
-                                        <a href="https://github.com/valerievazq">
+                                        <a href="https://github.com/christinebussingerdev">
                                             <img src="https://avatars3.githubusercontent.com/u/49841130?s=460&v=4" alt="4" /></a>
                                         <h2 class="profile-header">Christine Bussinger</h2>
                                         <p>Back-End Developer</p>
@@ -240,23 +257,14 @@
                                     </div>
                             </li>
                         </ul>
+                        </section>
                     </section>
                     <embed src="/music/13 - Dreams Are Dangerous.mp3" loop="true" autostart="true" width="2" height="2">
                 </section>
-                
-            </div>
-           
-            
-            
-            
-       
-            
+            </div>      
         </section>
 
-        <section class="container">
-           
-        </section>
-
+<canvas id="gameCanvas"width="300"height="300">canvas>
         
     </main>
 </body>

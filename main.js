@@ -9,6 +9,8 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+
+// searcg bar
 document.getElementById("searchform").onsubmit = function () {
   window.location =
     "http://www.bing.com/search?q=site:http://127.0.0.1:5500" +
@@ -116,3 +118,5 @@ gsap.to(animProps, {
     renderingParent.rotation.set(animProps.xRot, animProps.yRot, 0);
   }
 });
+
+// Snake Game

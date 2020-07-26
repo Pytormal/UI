@@ -210,6 +210,15 @@ html .container {
   align-items: center;
   margin: 2rem;
 }
+.carousel-inner {
+  height: 80rem;
+}
+.carousel-inner img {
+  margin: 0 auto;
+}
+.horizontal-team-header {
+  display: none;
+}
 nav h1 {
   font-size: 1.2rem;
 }
@@ -785,4 +794,37 @@ body main .horizontal-scroll img:hover {
   body .vertical-scroll img {
     width: 50rem;
   }
+}
+@media (min-width: 768px) {
+  .horizontal-team-header {
+    display: block;
+  }
+  .about-container .lead-profile {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+.snake-board table {
+  border-collapse: collapse;
+}
+.snake-board td {
+  width: 20px;
+  height: 20px;
+  border: 0;
+}
+.snake-board .col {
+  background-color: yellow;
+}
+.snake-board .snake {
+  background-color: blue;
+}
+.snake-board .fruit {
+  background-color: red;
 }

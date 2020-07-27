@@ -180,6 +180,9 @@ html {
 html body {
   margin: 0;
 }
+html body main h2 {
+  font-weight: bold;
+}
 html body .welcome-header {
   display: flex;
   flex-direction: column;
@@ -209,9 +212,6 @@ html .container {
   justify-content: center;
   align-items: center;
   margin: 2rem;
-}
-.carousel-inner {
-  height: 80rem;
 }
 .carousel-inner img {
   margin: 0 auto;
@@ -804,6 +804,9 @@ body main .horizontal-scroll img:hover {
   }
 }
 @media (min-width: 1024px) {
+  main h2 {
+    font-size: 1.8rem;
+  }
   .main-content {
     display: flex;
     flex-direction: row;

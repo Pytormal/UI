@@ -42,16 +42,18 @@
 <!-- navigation -->
 <nav>
     <ul class="top-nav">
-        <!-- <h1>Essentialism</h1> -->
+    <!-- <h1>Essentialism</h1> -->
 
-        <a href="index.html" class="home-button"><img src="/Lambda School/Web Fundamentals/UI/Pictures/Essentialism logo.png"/></a>
+        <a href="index.html" class="home-button">
+            <img src="/Lambda School/Web Fundamentals/UI/Pictures/Essentialism logo.png"  alt="Essentialism"></a>
 
         <!-- search bar -->
         <form id="sarchform" class="search2" method="get" action="source.html">
-
+            
             <input class="search2" id="test" type="text" name="search" placeholder="Search the site" size="10"
-                maxlength="255" />
-    </ul>
+                maxlength="50" />
+                <!-- end of search bar -->
+    </ul> <!-- end of top navigation -->
 
     <!-- Navigation links (hidden by default) -->
     <ul class="menu-button">
@@ -61,115 +63,109 @@
             <a href="About.html">About Us</a>
         </div>
 
-        <!--"Hamburger menu" / "Bar icon" to toggle the navigation links-->
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i></a>
     </ul>
-</nav>
+</nav> <!-- end of Navigation bar -->
 
-<header class="header">
-    <div class="Fun">
-        <div id="myCarousel1" class="carousel slide" data-ride="carousel">    
+<!-- header -->
+<header class="index-header header">
+
+    <!-- carousel -->
+        <div id="myCarousel1" class="carousel slide" data-ride="carousel">
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
+
+                <!-- slide content -->
                 <div class="item active">
                     <h2 class="welcome-header">Welcome</h2>
                     <p>
-                A site where your goals and values can move you in the direction of a more essential and minimal lifestyle. Less is
-                more.
+                A site where your goals and values can move you in the direction of a more essential and minimal lifestyle. Less is more.
                     </p>
                 </div>
-        
+
                 <div class="item">
                     <h2 class="simple-header">Simple</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Erat nam at lectus urna duis convallis convallis. Nullam ac tortor vitae purus faucibus ornare suspendisse
-                        sed.
+                       Setting up your account is simple and effective. want to start simplifying your life now? it's free to sign up!
                     </p>
                 </div>
+
                 <div class="item">
                     <h2 class="fun-header">Fun</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna
-                        aliqua. Erat nam at lectus urna duis convallis convallis. Nullam ac tortor vitae purus faucibus ornare
-                        suspendisse
-                        sed.
+                    On this site you will experience lots of fun and interactive actions to keep your life simple, yet fun to plan.
                     </p>
                 </div>
         
                 <div class="item">
                     <h2 class="safe-header">Safe</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Erat nam at lectus urna duis convallis convallis. Nullam ac tortor vitae purus faucibus ornare suspendisse
-                        sed.
+                        This is a safe environment where there are no judging of any type. we are here to help you improve your life simply.
                     </p>
                 </div>
+                <!-- end of slide content -->
             </div>
         </div>
-    </div>
-</header>
+</header> <!-- end of Header -->
    
+<!-- body -->
 <body>
-    <main> 
+    <!-- main content -->
+    <main>
+        <!-- Welcome Header invisible at Mobile -->
         <div class="welcome-header"><h2 >Welcome</h2>
-<p>
-    A site where your goals and values can move you in the direction of a more essential and minimal lifestyle. Less is
-    more.
-</p>
-</div> 
+            <p>
+                A site where your goals and values can move you in the direction of a more essential and minimal lifestyle. Less is more.
+            </p>
+        </div>
+
+<!-- invisible at Mobile -->
         <section class="unique">    
             <div class="fun">
-                <h2 class="fun-header">Fun</h2>
+                <h3 class="fun-header">Fun</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna
-                    aliqua. Erat nam at lectus urna duis convallis convallis. Nullam ac tortor vitae purus faucibus ornare
-                    suspendisse
-                    sed.
+                    On this site you will experience lots of fun and interactive actions to keep your life simple, yet fun to plan.
                 </p>
             </div>
         
             <div class="Simple">
-                <h2 class="simple-header">Simple</h2>
+                <h3 class="simple-header">Simple</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna
-                    aliqua. Erat nam at lectus urna duis convallis convallis. Nullam ac tortor vitae purus faucibus ornare
-                    suspendisse
-                    sed.
+                    Setting up your account is simple and effective. want to start simplifying your life now? it's free to sign up!
                 </p>
             </div>
         
             <div class="Safe">
-                <h2 class="safe-header">Safe</h2>
+                <h3 class="safe-header">Safe</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna
-                    aliqua. Erat nam at lectus urna duis convallis convallis. Nullam ac tortor vitae purus faucibus ornare
-                    suspendisse
-                    sed.
+                    This is a safe environment where there are no judging of any type. we are here to help you improve your life simply.
                 </p>
             </div>
         </section>
-
+<!-- end of unique section -->
        
-            <div class="video">
-                <p>
+<!-- video content -->
+        <section class="video">
+            <p>
                     <iframe src="https://www.youtube-nocookie.com/embed/7xdfkhJiFh8" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </p>
-                <p>
+            </p>
+
+            <p>
                     <iframe src="https://www.youtube-nocookie.com/embed/h8u4clhDHvQ" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </p>
-            </div>
+            </p>
+        </section>
+<!-- end of video section -->
+
+<!-- Carousel invisible at and above Tablet breakpoint-->
+<!-- ideas to simplify life Carousel on Mobile -->
 
         <section class="container">
-            <h2>Essential Ideas</h2>
+            <h3>Ideas to help you find the simply things in life. Less is more.</h2>
 
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
@@ -214,15 +210,16 @@
                 </a>
             </div>
         </section>
+<!-- end of Carousel -->
 
+<!-- Horizontal content hidden on mobile breakpoint -->
         <section class="horizontal-scroll">
             <section class="top-row">
                 <ul>
                     <li><a href="other pages/Project 1/Build Week Unit1/marketing_page/Index.html">
-                            <img src="https://picsum.photos/id/103/367/267" alt="1"></a>
+                            <img src="https://picsum.photos/id/665/367/267" alt="1"></a>
                         <h3>
-                            <a href="other pages/Project 1/Build Week Unit1/marketing_page/Index.html">
-                                Essential Idea 1</a>
+                            <a href="other pages/Project 1/Build Week Unit1/marketing_page/Index.html">Explore more</a>
                         </h3>
                     </li>
                 </ul>
@@ -230,32 +227,38 @@
                     <li><a href="">
                             <img src="https://picsum.photos/id/104/367/267" alt="2" /></a>
                         <h3>
-                            <a href="other pages/Project 2.html">Essential Idea 2</a>
+                            <a href="other pages/Project 2.html">Being creative</a>
                         </h3>
                     </li>
                 </ul>
                 <ul>
                     <li><a href="">
-                            <img src="https://picsum.photos/id/1079/367/267" alt="3" /></a>
+                            <img src="https://picsum.photos/id/472/367/267" alt="3" /></a>
                         <h3>
-                            <a href="other pages/Project 3.html">Essential Idea 3</a>
+                            <a href="other pages/Project 3.html">Finding beauty</a>
                         </h3>
                     </li>
                 </ul>
                 <ul>
                     <li><a href="">
-                            <img src="https://picsum.photos/id/129/367/267" alt="4" /></a>
+                            <img src="https://picsum.photos/id/778/367/267" alt="4" /></a>
                         <h3>
-                            <a href="other pages/Project 4.html">Essential Idea 4</a>
+                            <a href="other pages/Project 4.html">Be yourself</a>
                         </h3>
                     </li>
                 </ul>
             </section>
             <embed src="/music/13 - Dreams Are Dangerous.mp3" loop="true" autostart="true" width="2" height="2">
         </section>
+        <!-- end of Horizontal content -->
     </main>
+    <!-- end of main content -->
 </body>
+<!-- end of body -->
+
+<!-- footer -->
 <footer>
+    <!-- bottom navigator -->
     <nav>
         <ul class="bottom-nav">
             <section>
@@ -265,6 +268,7 @@
             </section>
         </ul>
     </nav>
+    <!-- end of navigator -->
 </footer>
-
+<!-- end of footer -->
 </html>

@@ -332,6 +332,7 @@ header .carousel-inner {
   display: block;
   position: fixed;
   position: relative;
+  width: 100%;
 }
 body main {
   height: auto;

@@ -225,6 +225,7 @@ nav h1 {
 nav .top-nav {
   background-color: #60afdd;
   width: auto;
+  height: 200px;
   display: flex;
   flex-direction: row;
   justify-content: center;

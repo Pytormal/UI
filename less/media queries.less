@@ -247,50 +247,50 @@ body {
         }
       }
     }
-  }
 
-  //project columns for mobile Projects Page
-  .vertical-scroll {
-    @media @tablet {
-      display: unset;
-      .top-row,
-      .bottom-row {
-        .flex-row;
-      }
-    }
-
-    img {
+    //project columns for mobile Projects Page
+    .vertical-scroll {
       @media @tablet {
-        display: block;
-        width: 12rem;
+        display: unset;
+        .top-row,
+        .bottom-row {
+          .flex-row;
+        }
       }
 
-      @media @desktop {
-        width: 15rem;
-      }
+      img {
+        @media @tablet {
+          display: block;
+          width: 12rem;
+        }
 
-      @media @Ldesktop {
-        width: 28rem;
-      }
+        @media @desktop {
+          width: 15rem;
+        }
 
-      @media @4k {
-        width: 50rem;
+        @media @Ldesktop {
+          width: 28rem;
+        }
+
+        @media @4k {
+          width: 50rem;
+        }
       }
     }
   }
-}
 
-// About us Page
-@media @tablet {
-  .horizontal-team-header {
-    display: block;
-  }
-  .about-container {
-    .lead-profile {
+  // About us Page
+  @media @tablet {
+    .horizontal-team-header {
       display: block;
     }
+    .about-container {
+      .lead-profile {
+        display: block;
+      }
+    }
   }
-}
+
 @media @desktop {
   main {
     h2 {
@@ -298,7 +298,9 @@ body {
     }
   }
 
-  .main-content {
-    .flex-evenly;
+
+    .main-content {
+      .flex-evenly;
+    }
   }
 }

@@ -180,6 +180,9 @@ html {
 html body {
   margin: 0;
 }
+html body main .horizontal-scroll {
+  display: none;
+}
 html body main h2 {
   font-weight: bold;
 }
@@ -731,9 +734,14 @@ body main .horizontal-scroll img:hover {
     align-items: center;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   body main .container {
-    height: auto;
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  body main .horizontal-scroll {
+    display: block;
   }
 }
 @media (min-width: 768px) {

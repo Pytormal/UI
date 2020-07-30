@@ -157,6 +157,12 @@ table {
   align-items: center;
   text-align: center;
 }
+.flex-center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -169,7 +175,8 @@ table {
   justify-content: center;
   align-items: center;
 }
-html {
+html body {
+  margin: 0;
   align-items: stretch;
   text-align: center;
   display: flex;
@@ -195,35 +202,125 @@ html body .welcome-header {
   justify-content: center;
   align-items: center;
 }
-html canvas {
+html body canvas {
   width: 100%;
   height: 100%;
 }
-html .top-row,
-html .bottom-row {
+html body .top-row,
+html body .bottom-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-html .top-row ul,
-html .bottom-row ul {
+html body .top-row ul,
+html body .bottom-row ul {
   padding: 4rem;
   box-sizing: border-box;
 }
-html .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem;
+html body .container {
+  margin: 0 auto;
+}
+html body .container h3 {
+  font-size: 2rem;
+}
+html body .container .tablet-h3 {
+  display: none;
 }
 .carousel-inner img {
   margin: 0 auto;
 }
-.about-container {
+.horizontal-team-header {
   display: none;
+}
+main .dark-mode {
+  background-color: black;
+  color: white;
+}
+header {
+  margin: 0 auto;
+}
+header #myCarousel {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  align-items: center;
+  text-align: center;
+}
+header #myCarousel .carousel {
+  width: fit-content;
+}
+header #myCarousel .carousel img {
+  margin: 0 auto;
+  width: 30rem;
+}
+header #myCarousel3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+header #myCarousel3 img {
+  margin: 0 auto;
+}
+body main {
+  height: auto;
+}
+body main .unique {
+  display: none;
+  align-items: flex-end;
+  padding: 2rem 1rem;
+  width: auto;
+  margin: 2px;
+}
+body main .unique div {
+  padding: 2rem 0.2rem;
+}
+body main .unique div h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  padding: 1rem;
+}
+body main .unique div p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+body main .video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .horizontal-scroll {
+  display: none;
+}
+body main .horizontal-scroll img:hover {
+  transform: scale(1.45);
+}
+body main #myCarousel1 {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  align-items: center;
+  text-align: center;
+}
+body main #myCarousel1 .carousel {
+  width: fit-content;
+}
+body main #myCarousel1 .carousel img {
+  margin: 0 auto;
+  width: 30rem;
+}
+
+body main .horizontal-row {
+  display: none;
+}
+body main .about-container {
+  display: none;
+}
+nav {
+  width: 100%;
 }
 nav h1 {
   font-size: 1.2rem;
@@ -269,7 +366,6 @@ nav .menu-button a :hover {
 }
 nav .bottom-nav {
   background-color: #14213d;
-  width: auto;
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -323,23 +419,22 @@ nav img:hover {
   -webkit-filter: brightness(0.6) contrast(3.4) hue-rotate(217deg) saturate(9.9);
   filter: brightness(0.6) contrast(3.4) hue-rotate(217deg) saturate(9.9);
 }
-header div {
-  padding: 2rem 0.2rem;
+header {
+  margin: 0 auto;
 }
-header div h2 {
-  text-align: center;
-  font-size: 2.4rem;
-  padding: 1rem;
-}
-header div p {
-  font-size: 1.2rem;
+header #myCarousel {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  align-items: center;
   text-align: center;
 }
-header .carousel-inner {
-  display: block;
-  position: fixed;
-  position: relative;
-  width: 100%;
+header #myCarousel .carousel {
+  width: fit-content;
+}
+header #myCarousel .carousel img {
+  margin: 0 auto;
+  width: 30rem;
 }
 body main {
   height: auto;
@@ -743,7 +838,7 @@ body main .horizontal-scroll img:hover {
   }
 }
 @media (min-width: 768px) {
-  body main .horizontal-scroll {
+  body main .horizontal-scroll .top-row {
     display: block;
   }
 }
@@ -824,3 +919,58 @@ body main .horizontal-scroll img:hover {
     font-size: 3em;
   }
 }
+<<<<<<< HEAD
+=======
+@media (min-width: 768px) {
+  body main .vertical-scroll {
+    display: unset;
+  }
+  body main .vertical-scroll .top-row,
+  body main .vertical-scroll .bottom-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  body main .vertical-scroll img {
+    display: block;
+    width: 12rem;
+  }
+}
+@media (min-width: 1024px) {
+  body main .vertical-scroll img {
+    width: 15rem;
+  }
+}
+@media (min-width: 1440px) {
+  body main .vertical-scroll img {
+    width: 28rem;
+  }
+}
+@media (min-width: 2560px) {
+  body main .vertical-scroll img {
+    width: 50rem;
+  }
+}
+@media (min-width: 768px) {
+  body .horizontal-team-header {
+    display: block;
+  }
+  body .about-container .lead-profile {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  body main h2 {
+    font-size: 1.8rem;
+  }
+  body .main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+>>>>>>> 9942f570b432aa7dbe30e3b119d28f3d6dbfe73b

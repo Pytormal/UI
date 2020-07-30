@@ -136,7 +136,7 @@ body {
       }
       @media @tablet {
         font-size: 2rem;
-        .flex-centered;
+        .flex-center-stretch;
       }
     }
 
@@ -247,58 +247,8 @@ body {
         }
       }
     }
-  }
+  
 
   //project columns for mobile Projects Page
-  .vertical-scroll {
-    @media @tablet {
-      display: unset;
-      .top-row,
-      .bottom-row {
-        .flex-row;
-      }
-    }
 
-    img {
-      @media @tablet {
-        display: block;
-        width: 12rem;
-      }
-
-      @media @desktop {
-        width: 15rem;
-      }
-
-      @media @Ldesktop {
-        width: 28rem;
-      }
-
-      @media @4k {
-        width: 50rem;
-      }
-    }
-  }
-}
-
-// About us Page
-@media @tablet {
-  .horizontal-team-header {
-    display: block;
-  }
-  .about-container {
-    .lead-profile {
-      display: block;
-    }
-  }
-}
-@media @desktop {
-  main {
-    h2 {
-      font-size: 1.8rem;
-    }
-  }
-
-  .main-content {
-    .flex-evenly;
-  }
-}
+}}

@@ -169,7 +169,12 @@ body {
     // 'Essential ideas' rows for tablet and desktop
     .container {
       @media @tablet {
-        display: block;
+        .mobile-h3 {
+          display: none;
+        }
+        .tablet-h3 {
+          display: block;
+        }
       }
     }
     .horizontal-scroll {
@@ -291,13 +296,12 @@ body {
     }
   }
 
-@media @desktop {
-  main {
-    h2 {
-      font-size: 1.8rem;
+  @media @desktop {
+    main {
+      h2 {
+        font-size: 1.8rem;
+      }
     }
-  }
-
 
     .main-content {
       .flex-evenly;

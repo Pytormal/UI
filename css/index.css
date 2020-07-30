@@ -150,7 +150,7 @@ table {
   justify-content: space-evenly;
   align-items: center;
 }
-.flex-centered {
+.flex-center-stretch {
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -175,63 +175,119 @@ table {
   justify-content: center;
   align-items: center;
 }
-html body {
+.top-nav {
+  background-color: #60afdd;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.menu-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.menu-button #myLinks {
+  display: none;
+}
+.menu-button .icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 2rem;
+  background-color: #60afdd;
+}
+.menu-button a {
+  color: #d6d8d3;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  background-color: #60afdd;
+  height: auto;
+  border-radius: 1rem;
+}
+.menu-button a :hover {
+  color: #d6d8d3;
+}
+.bottom-nav {
+  background-color: #14213d;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-nav a {
+  display: inline-block;
+}
+.bottom-nav .fa-do {
+  font-size: 4rem;
+  width: 80%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body {
   margin: 0;
+}
+body main .container .tablet-h3 {
+  display: none;
+}
+body main .horizontal-scroll {
   align-items: stretch;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-html body {
-  margin: 0;
-}
-html body main .horizontal-scroll {
   display: none;
 }
-html body main p {
+body main p {
   margin: 0 auto;
 }
-html body main h2 {
+body main h2 {
   font-weight: bold;
 }
-html body .welcome-header {
+body .welcome-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-html body canvas {
+body canvas {
   width: 100%;
   height: 100%;
 }
-html body .top-row,
-html body .bottom-row {
+body .top-row,
+body .bottom-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-html body .top-row ul,
-html body .bottom-row ul {
+body .top-row ul,
+body .bottom-row ul {
   padding: 4rem;
   box-sizing: border-box;
 }
-html body .container {
-  margin: 0 auto;
-}
-html body .container h3 {
-  font-size: 2rem;
-}
-html body .container .tablet-h3 {
-  display: none;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
 }
 .carousel-inner img {
   margin: 0 auto;
 }
-.horizontal-team-header {
+.about-container {
   display: none;
 }
 main .dark-mode {
@@ -312,77 +368,11 @@ body main #myCarousel1 .carousel img {
   margin: 0 auto;
   width: 30rem;
 }
-
 body main .horizontal-row {
   display: none;
 }
 body main .about-container {
   display: none;
-}
-nav {
-  width: 100%;
-}
-nav h1 {
-  font-size: 1.2rem;
-}
-nav .top-nav {
-  background-color: #60afdd;
-  width: auto;
-  height: 200px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-nav .menu-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-nav .menu-button #myLinks {
-  display: none;
-}
-nav .menu-button .icon {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  font-size: 2rem;
-  background-color: #60afdd;
-}
-nav .menu-button a {
-  color: #d6d8d3;
-  padding: 1rem 1rem;
-  text-decoration: none;
-  font-size: 1.2rem;
-  margin: 0 auto;
-  background-color: #60afdd;
-  height: auto;
-  border-radius: 1rem;
-}
-nav .menu-button a :hover {
-  color: #d6d8d3;
-}
-nav .bottom-nav {
-  background-color: #14213d;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-nav .bottom-nav a {
-  display: inline-block;
-}
-nav .bottom-nav .fa-do {
-  font-size: 4rem;
-  width: 80%;
-  padding: 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
 }
 .vertical-scroll {
   display: none;
@@ -833,12 +823,15 @@ body main .horizontal-scroll img:hover {
   }
 }
 @media (min-width: 768px) {
-  body main .container {
+  body main .container .mobile-h3 {
+    display: none;
+  }
+  body main .container .tablet-h3 {
     display: block;
   }
 }
 @media (min-width: 768px) {
-  body main .horizontal-scroll .top-row {
+  body main .horizontal-scroll {
     display: block;
   }
 }
@@ -919,8 +912,6 @@ body main .horizontal-scroll img:hover {
     font-size: 3em;
   }
 }
-<<<<<<< HEAD
-=======
 @media (min-width: 768px) {
   body main .vertical-scroll {
     display: unset;
@@ -973,4 +964,3 @@ body main .horizontal-scroll img:hover {
     align-items: center;
   }
 }
->>>>>>> 9942f570b432aa7dbe30e3b119d28f3d6dbfe73b

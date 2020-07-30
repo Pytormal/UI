@@ -216,7 +216,7 @@ html .container {
 .carousel-inner img {
   margin: 0 auto;
 }
-.horizontal-scroll {
+.about-container {
   display: none;
 }
 nav h1 {
@@ -737,30 +737,30 @@ body main .horizontal-scroll img:hover {
   }
 }
 @media (min-width: 768px) {
-  body main .horizontal-scroll {
+  body main .about-container {
     display: block;
   }
-  body main .horizontal-scroll img {
-    width: 12rem;
+  body main .about-container ul img {
+    width: 22rem;
   }
 }
 @media (min-width: 1024px) {
-  body main .horizontal-scroll img {
+  body main .about-container img {
     width: 90%;
     margin: 0 auto;
   }
 }
 @media (min-width: 1440px) {
-  body main .horizontal-scroll img {
+  body main .about-container img {
     width: 75%;
     margin: auto;
   }
-  body main .horizontal-scroll p {
+  body main .about-container p {
     text-align: center;
   }
 }
 @media (min-width: 2560px) {
-  body main .horizontal-scroll img {
+  body main .about-container img {
     width: 50rem;
   }
 }

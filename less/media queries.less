@@ -197,17 +197,31 @@ body {
         }
       }
       @media @Ldesktop {
+        margin: 0 auto;
         img {
-          width: 75%;
-          margin: auto;
+          width: 50%;
         }
-
+        h2 {
+          font-size: 3rem;
+        }
         p {
-          text-align: center;
+          font-size: 2rem;
+          width: 90%;
         }
       }
 
       @media @4k {
+        h2 {
+          font-size: 6rem;
+        }
+        .lead-profile {
+          p {
+            margin: 0 auto;
+            width: 70%;
+            font-size: 4rem;
+          }
+        }
+
         .top-row {
           .flex-evenly;
           width: 100%;

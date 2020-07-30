@@ -183,6 +183,9 @@ html body {
 html body main .horizontal-scroll {
   display: none;
 }
+html body main p {
+  margin: 0 auto;
+}
 html body main h2 {
   font-weight: bold;
 }
@@ -765,15 +768,29 @@ body main .horizontal-scroll img:hover {
   }
 }
 @media (min-width: 1440px) {
+  body main .about-container {
+    margin: 0 auto;
+  }
   body main .about-container img {
-    width: 75%;
-    margin: auto;
+    width: 50%;
+  }
+  body main .about-container h2 {
+    font-size: 3rem;
   }
   body main .about-container p {
-    text-align: center;
+    font-size: 2rem;
+    width: 90%;
   }
 }
 @media (min-width: 2560px) {
+  body main .about-container h2 {
+    font-size: 6rem;
+  }
+  body main .about-container .lead-profile p {
+    margin: 0 auto;
+    width: 70%;
+    font-size: 4rem;
+  }
   body main .about-container .top-row {
     display: flex;
     flex-direction: row;

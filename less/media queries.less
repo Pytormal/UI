@@ -135,7 +135,7 @@ body {
         display: none;
       }
       @media @tablet {
-        font-size: 2rem;
+        font-size: 1em;
         .flex-center-stretch;
       }
     }
@@ -159,10 +159,23 @@ body {
         .flex-evenly;
       }
     }
-    @media @tablet {
-      .video {
+
+    .video {
+      @media @tablet {
+        margin: 0 auto;
         display: block;
-        .flex-evenly;
+        width: 80%;
+        .flex-between;
+
+        p {
+          margin: 0 auto;
+        }
+      }
+      @media @desktop {
+        width: 80%;
+      }
+        @media @Ldesktop {
+        width: 60%;
       }
     }
 
@@ -174,6 +187,7 @@ body {
         }
         .tablet-h3 {
           display: block;
+          font-size: 2rem;
         }
       }
     }
@@ -192,18 +206,26 @@ body {
     .about-container {
       @media @tablet {
         display: block;
-
+        P {
+          font-size: 2rem;
+        }
+        .lead-profile {
+          img {
+            width: 22rem;
+          }
+        }
         img {
           width: 22rem;
         }
-        .top-row, .bottom-row{
+        .top-row,
+        .bottom-row {
           .flex-evenly;
         }
 
-        .profiles{
+        .profiles {
           text-align: center;
-          width:30rem;
-          margin:5rem;
+          width: 30rem;
+          
         }
       }
 
@@ -212,10 +234,20 @@ body {
           .flex-row;
         }
         img {
-          width: 90%;
+          width: 65%;
           margin: 0 auto;
         }
+
+        .row {
+          .flex-evenly;
+        }
+        .profiles {
+          margin: 0 auto;
+          text-align: center;
+          width: 95%;
+        }
       }
+
       @media @Ldesktop {
         margin: 0 auto;
         img {
@@ -231,14 +263,20 @@ body {
       }
 
       @media @4k {
+        .about-header {
+          h2 {
+            font-size: 6rem;
+          }
+        }
         h2 {
-          font-size: 6rem;
+          font-size: 4rem;
+          font-weight: bolder;
         }
         .lead-profile {
           p {
             margin: 0 auto;
             width: 70%;
-            font-size: 4rem;
+            font-size: 2.6rem;
           }
         }
 
@@ -263,63 +301,38 @@ body {
         }
         p {
           font-weight: bolder;
-          font-size: 3em;
+          font-size: 3rem;
         }
       }
     }
 
-    //project columns for mobile Projects Page
-    .vertical-scroll {
-      @media @tablet {
-        display: unset;
-        .top-row,
-        .bottom-row {
-          .flex-row;
-        }
-      }
-
-      img {
-        @media @tablet {
-          display: block;
-          width: 12rem;
-        }
-
-        @media @desktop {
-          width: 15rem;
-        }
-
-        @media @Ldesktop {
-          width: 28rem;
-        }
-
-        @media @4k {
-          width: 50rem;
-        }
-      }
-    }
-  }
-
-  // About us Page
-  @media @tablet {
-    .horizontal-team-header {
-      display: block;
-    }
-    .about-container {
-      .lead-profile {
+    // About us Page
+    @media @tablet {
+      .horizontal-team-header {
         display: block;
       }
-    }
-  }
-
-  @media @desktop {
-    main {
-      h2 {
-        font-size: 1.8rem;
+      .about-container {
+        .lead-profile {
+          display: block;
+        }
       }
     }
 
-    .main-content {
-      .flex-evenly;
+    @media @desktop {
+      main {
+        .welcome-header {
+          p {
+            width: 90%;
+          }
+        }
+        h2 {
+          font-size: 1.8rem;
+        }
+      }
+
+      .main-content {
+        .flex-evenly;
+      }
     }
   }
 }

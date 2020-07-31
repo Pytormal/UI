@@ -284,6 +284,9 @@ body .bottom-row ul {
   align-items: center;
   margin: 2rem;
 }
+.container .mobile-h3 {
+  font-size: 2rem;
+}
 .carousel-inner img {
   margin: 0 auto;
 }
@@ -325,7 +328,6 @@ body main {
 }
 body main .unique {
   display: none;
-  align-items: flex-end;
   padding: 2rem 1rem;
   width: auto;
   margin: 2px;
@@ -333,7 +335,7 @@ body main .unique {
 body main .unique div {
   padding: 2rem 0.2rem;
 }
-body main .unique div h2 {
+body main .unique div h3 {
   text-align: center;
   font-size: 2.4rem;
   padding: 1rem;
@@ -374,13 +376,30 @@ body main .horizontal-row {
 body main .about-container {
   display: none;
 }
-.about-header,
-.about-container {
+.about-header h2,
+.about-container h2 {
+  font-weight: bolder;
   text-align: center;
 }
 .about-header p,
 .about-container p {
+  margin: 0 auto;
   margin-bottom: 6rem;
+  width: 80%;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.about-header .lead-profile,
+.about-container .lead-profile {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  align-items: center;
+  text-align: center;
+}
+.about-header .lead-profile img,
+.about-container .lead-profile img {
+  width: 25rem;
 }
 #myCarousel1 {
   text-align: center;
@@ -390,10 +409,18 @@ body main .about-container {
   margin: 0 auto;
 }
 .carousel-inner img {
-  width: 12rem;
+  width: 25rem;
+}
+.carousel-inner p {
+  margin: 0 auto;
+  width: 60%;
 }
 .about-container .headers {
   text-align: center;
+}
+.about-container ul {
+  margin: 0 auto;
+  width: 95%;
 }
 * {
   font-family: "Raleway", sans-serif;
@@ -796,7 +823,7 @@ body main .horizontal-scroll img:hover {
 }
 @media (min-width: 768px) {
   body main .welcome-header {
-    font-size: 2rem;
+    font-size: 1em;
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -827,11 +854,26 @@ body main .horizontal-scroll img:hover {
 }
 @media (min-width: 768px) {
   body main .video {
+    margin: 0 auto;
     display: block;
+    width: 80%;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
+  }
+  body main .video p {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1024px) {
+  body main .video {
+    width: 80%;
+  }
+}
+@media (min-width: 1440px) {
+  body main .video {
+    width: 60%;
   }
 }
 @media (min-width: 768px) {
@@ -840,6 +882,7 @@ body main .horizontal-scroll img:hover {
   }
   body main .container .tablet-h3 {
     display: block;
+    font-size: 2rem;
   }
 }
 @media (min-width: 768px) {
@@ -857,6 +900,12 @@ body main .horizontal-scroll img:hover {
   body main .about-container {
     display: block;
   }
+  body main .about-container P {
+    font-size: 2rem;
+  }
+  body main .about-container .lead-profile img {
+    width: 22rem;
+  }
   body main .about-container img {
     width: 22rem;
   }
@@ -870,7 +919,6 @@ body main .horizontal-scroll img:hover {
   body main .about-container .profiles {
     text-align: center;
     width: 30rem;
-    margin: 5rem;
   }
 }
 @media (min-width: 1024px) {
@@ -881,8 +929,19 @@ body main .horizontal-scroll img:hover {
     align-items: center;
   }
   body main .about-container img {
-    width: 90%;
+    width: 65%;
     margin: 0 auto;
+  }
+  body main .about-container .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  body main .about-container .profiles {
+    margin: 0 auto;
+    text-align: center;
+    width: 95%;
   }
 }
 @media (min-width: 1440px) {
@@ -901,13 +960,17 @@ body main .horizontal-scroll img:hover {
   }
 }
 @media (min-width: 2560px) {
-  body main .about-container h2 {
+  body main .about-container .about-header h2 {
     font-size: 6rem;
+  }
+  body main .about-container h2 {
+    font-size: 4rem;
+    font-weight: bolder;
   }
   body main .about-container .lead-profile p {
     margin: 0 auto;
     width: 70%;
-    font-size: 4rem;
+    font-size: 2.6rem;
   }
   body main .about-container .top-row {
     display: flex;
@@ -939,55 +1002,25 @@ body main .horizontal-scroll img:hover {
   }
   body main .about-container p {
     font-weight: bolder;
-    font-size: 3em;
+    font-size: 3rem;
   }
 }
 @media (min-width: 768px) {
-  body main .vertical-scroll {
-    display: unset;
-  }
-  body main .vertical-scroll .top-row,
-  body main .vertical-scroll .bottom-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media (min-width: 768px) {
-  body main .vertical-scroll img {
-    display: block;
-    width: 12rem;
-  }
-}
-@media (min-width: 1024px) {
-  body main .vertical-scroll img {
-    width: 15rem;
-  }
-}
-@media (min-width: 1440px) {
-  body main .vertical-scroll img {
-    width: 28rem;
-  }
-}
-@media (min-width: 2560px) {
-  body main .vertical-scroll img {
-    width: 50rem;
-  }
-}
-@media (min-width: 768px) {
-  body .horizontal-team-header {
+  body main .horizontal-team-header {
     display: block;
   }
-  body .about-container .lead-profile {
+  body main .about-container .lead-profile {
     display: block;
   }
 }
 @media (min-width: 1024px) {
-  body main h2 {
+  body main main .welcome-header p {
+    width: 90%;
+  }
+  body main main h2 {
     font-size: 1.8rem;
   }
-  body .main-content {
+  body main .main-content {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
